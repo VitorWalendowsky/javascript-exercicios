@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Exercícios JavaScript</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        button {
+            margin: 5px 10px 15px 0;
+            padding: 10px 15px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        #resultado {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f0f0f0;
+            border-radius: 6px;
+            min-height: 120px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Exercícios JavaScript</h1>
+
+    <div>
+        <button onclick="exercicio01()">Exercício 01</button>
+        <button onclick="exercicio02()">Exercício 02</button>
+        <button onclick="exercicio03()">Exercício 03</button>
+        <button onclick="exercicio04()">Exercício 04</button>
+        <button onclick="exercicio05()">Exercício 05</button>
+        <button onclick="exercicio06()">Exercício 06</button>
+        <button onclick="exercicio07()">Exercício 07</button>
+        <button onclick="exercicio08()">Exercício 08</button>
+        <button onclick="exercicio09()">Exercício 09</button>
+        <button onclick="exercicio10()">Exercício 10</button>
+    </div>
+
+    <div id="resultado">
+        <p>Resultado aparecerá aqui...</p>
+    </div>
+
+    <script>
+        // Função auxiliar para prompt da nota no exercício 07
+        function promptNota() {
+            let nota = prompt("Digite a nota (0 a 10):");
+            nota = parseFloat(nota);
+            if (isNaN(nota) || nota < 0 || nota > 10) {
+                alert("Por favor, digite uma nota válida entre 0 e 10.");
+                return null;
+            }
+            return nota;
+        }
+    </script>
+
+    <!-- Importando os scripts JS -->
+    <script src="../js/exercicio01.js"></script>
+    <script src="../js/exercicio02.js"></script>
+    <script src="../js/exercicio03.js"></script>
+    <script src="../js/exercicio04.js"></script>
+    <script src="../js/exercicio05.js"></script>
+    <script src="../js/exercicio06.js"></script>
+    <script src="../js/exercicio07.js"></script>
+    <script src="../js/exercicio08.js"></script>
+    <script src="../js/exercicio09.js"></script>
+    <script src="../js/exercicio10.js"></script>
+
+</body>
+</html>
